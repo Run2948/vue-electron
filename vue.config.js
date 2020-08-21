@@ -1,5 +1,5 @@
 // Electron集成Vue Cli3创建项目 https://www.psvmc.cn/article/2019-11-05-vue-cli3-electron.html
-const path = require("path")
+// const path = require("path")
 module.exports = {
   pluginOptions: {
     electronBuilder: {
@@ -11,12 +11,12 @@ module.exports = {
         icon: "build/icons/icon.ico",
         asar: true,
         directories: {
-          output: "build" // 输出文件路径
+          output: "dist_electron" // 输出文件路径
         },
         // files: [
         //   "dist_electron/**/*"
         // ],
-        // publish: {  // 发布到 Github release 中
+        // publish: {  // 发布到 Github 中
         //   provider: "Github",
         //   url: "https://github.com/Run2948/vue-electron.git"
         // },
