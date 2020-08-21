@@ -1,6 +1,8 @@
 {
   "name": "vue-electron",
   "version": "0.1.0",
+  "author": "Run2948",
+  "description": "基于node的定时关机项目",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
