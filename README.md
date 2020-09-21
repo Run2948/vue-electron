@@ -97,3 +97,48 @@ npm run electron:serve
 ```bash
 npm run electron:build
 ```
+
+## Electron 环境搭建
+
+#### 安装（全局安装，只需安装一次）
+
+> 安装速度慢，使用淘宝镜像加速：
+>
+> `npm config set ELECTRON_MIRROR https://npm.taobao.org/mirrors/electron/`
+
+```bash
+npm i -g electron
+```
+
+#### 1. 创建项目 （通过 Git 克隆项目）
+
+```bash
+git clone https://github.com/electron/electron-quick-start
+
+npm i
+
+npm start
+```
+
+#### 2.创建项目 （通过 electron-forge 脚手架）
+
+> `electron-forge` 相当于 `electron` 的一个脚手架，可以让我们更方便的创建、运行、打包 `electron` 项目。
+
+##### 1. 全局安装 `electron-forge`
+
+`npm i -g electron-forge` 
+
+##### 2.创建项目
+
+`electron-forge init myapp`
+
+**注意：此命令会默认执行 npm install ** 
+
+##### 3.运行项目
+
+```bash
+cd myapp
+
+npm start
+```
+
